@@ -1,27 +1,142 @@
 <!DOCTYPE html>
-    <html lang ="en">  
-        <head>
-            <meta charset="utf-8">
-            <title>StefelS.me</title>
+<html >
+    <head>
+            <title> Stefel Smith Online Portfolio</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@1,300&display=swap" rel="stylesheet">
             <link rel="stylesheet" href="stylesheets/main.css">
-        </head>
+            <meta name="description" content="Stefel Smith personal webpage" >
+            <meta name="author" content="Stefel Smith">
+            <meta name="viewport" content="width=device-width,intitial-scale=1.0">
 
-        <body>
-            <h1>About Me</h1>
-            <img src="images/profile2.PNG" alt="A picture of me">
-            <div class="introduction">
-                <p> 
+    </head>
+    <body>
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="left-side">
+                    <div class="nav-link-wrapper active-nav-link"> 
+                        <a href="index.html"> Home </a>
+                    </div>
+                    <div class="nav-link-wrapper"> 
+                        <a href= projects.html > Projects </a>
+                    </div>
+                    <div class="nav-link-wrapper"> 
+                        <a href="index.html"> Resume </a> <!--Add link to resume-->
+                    </div>
+                    <div class="nav-link-wrapper"> 
+                        <a href="about.html"> About me  </a>
+                    </div>
+                </div>
 
-                    Hello! I am a '24 at Dartmouth interesteding in engineering and computer science! I am from Brooklyn, NY.... (soon moving to Jersey but always a New Yorker). 
-                    During my time at Dartmouth so far, I've gain proficient skills in python and java as well as suitable knowledge and use of data structures. I'm excited to get into UI/UX design because it allows me to manifest what I've learned into a physical/digital experience to help and/or show to other people.
-                     Outside of comupter science
-                    one main area of interest is space! I was lucky enough to conduct research on black holes my freshman summer which as been a highlight of my college expereince thus far! Check out my pages for mor info!
-    
-                </p>
+                <div class="right-side">
+                    <div class="brand">
+                        <div>Stefel Smith</div>
+                    </div>
+                </div>
             </div>
 
-            <footer> <small> Website made by Stefel Smith</small></footer>
-        </body>
-    
+            <!-- Contents for entire page -->
+            <div class="content-wrapper">
+                <!-- Holds all links to other pages-->
+                <div class="portfolio-items-wrapper">
 
-    </html>
+                    <div class="portfolio-item-wrapper">
+                        <!--Stores background image to style in css-->
+                        <div class="portfolio-img-background" style="background-image: url(images/resume.png);"></div>
+
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="images/resume_logo.png">
+                            </div>
+
+                            <div class="subtitle">
+                                Check Out My Resume!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <!--Stores background image to style in css-->
+                        <div class="portfolio-img-background" style="background-image: url(images/projects.png);"></div>
+
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="images/project_logo.png">
+                            </div>
+
+                            <div class="subtitle">
+                                Some Recent Projects!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <!--Stores background image to style in css-->
+                        <div class="portfolio-img-background" style="background-image: url(images/profile2.PNG);"></div>
+
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="images/pfile3.png">
+                            </div>
+
+                            <div class="subtitle">
+                                Find out a bit about me!
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+            <footer class="main-footer">
+                <div class="container main-footer-container">
+                    <div class="socials">
+                        <div class="socials-link">
+                            <a href="https://twitter.com/SmithStefel" target="_blank"><img src="images/twitter.png"></a>
+                        </div>
+    
+                        <div class="social-link">
+                            <a href="https://www.linkedin.com/in/stefel-smith-867a45202/" target="_blank"><img src="images/linkedin.png" ></a>
+                        </div>
+    
+                        <div class="social-link">
+                            <a href="https://github.com/StefelS"><img src="images/github.png" target="_blank"></a>
+                        </div>
+                    </div>
+                    
+                    <p style="text-align: center; padding-bottom: 30px">
+                        <small> Website made by Stefel Smith</small>
+                    </p>
+                    <button  class="simple-button"> 
+                        <div style="text-decoration: darkcyan;"> Leave Feedback </div>
+                    </button >
+                </div>
+            </footer>
+
+        </div>
+    </body>
+
+    <script>
+        //create variabe 
+        const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+        //add event listener
+        portfolioItems.forEach(portfolioItem => {//js foreach loop, for each portfolio item 
+            portfolioItem.addEventListener('mouseover', () => {//() => is an anonymous function 
+                //take html object from div and class and manipulate using js; 
+                console.log(portfolioItem.childNodes[3].classList);
+                portfolioItem.childNodes[3].classList.add('img-darken');
+            })
+
+            //when mouse stops hovering
+            portfolioItem.addEventListener('mouseout', () => {//() => is an anonymous function 
+                //take html object from div and class and manipulate using js; 
+                //console.log(portfolioItem.childNodes[3].classList);
+                portfolioItem.childNodes[3].classList.remove('img-darken');
+            })
+        })
+
+
+    </script>
+</html>
