@@ -1,0 +1,155 @@
+/*----------------------------------- Master styles ----------------------------- */
+body{
+	font-family: "itillium+Web", sans-serif;
+	margin: 0px;
+}
+
+.container{
+	display: grid;
+	grid-template-columns: 1fr; /*entire layout considered having columns*/
+}
+
+/*----------------------------------- Navigation Bar ------------------------- */
+.nav-wrapper{
+	display: flex;
+	justify-content: space-between;
+	padding: 38px;
+}
+
+.left-side{
+	display: flex;
+}
+
+.nav-wrapper > .left-side > div{
+	margin-right: 20px;
+	font-size: 0.9em;
+	text-transform: uppercase;
+}
+
+.nav-link-wrapper{
+	height: 22px;
+	/* set up for fade in transitiion when hovering*/
+	border-bottom: 1px solid transparent;
+	transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a{
+	color: #8a8a8a;
+	text-decoration: none; /* remove basic html underline */ 
+	transition: color 0.5s;
+}
+
+.nav-link-wrapper :hover{ /* */
+	border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover{ /* hover is a pseudo state*/
+	color: black;
+}
+
+.active-nav-link {
+	border-bottom: 1px solid black;
+}
+
+.active-nav-link a{
+	color: black !important;
+}
+
+/*--------------------------------- Portfolio Styles ----------------------*/
+
+.portfolio-items-wrapper{
+	display : grid;
+	grid-template-columns: 1fr 1fr 1fr; /* give each collumn a full sized collumn*/
+}
+
+.portfolio-item-wrapper{
+	position: relative; /* Allows more flexibility to position of each item*/
+}
+
+.portfolio-img-background{
+	height: 350px;
+	width: 100%;
+	background-size: cover; /* crop images */
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.img-text-wrapper{
+	position: absolute; /* force element where it wouldnt go, mut need relative position parent*/
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	text-align: center;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+.logo-wrapper img{
+	width: 70%;
+	margin-bottom: 20px;
+}
+
+.img-text-wrapper .subtitle {
+	transition: 1s;
+	font-family: 600;
+	color: transparent;
+}
+
+.img-text-wrapper:hover  .subtitle {
+	font-weight: 600;
+	color:darkcyan;
+}
+
+/* js calls this when hovering over an image */
+.img-darken { 
+	transition: 1s;
+	filter: brightness(10%);
+}
+
+/* ----------------------- Footer ------------------- */
+.socials{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.socials img{
+	height: 50px;
+	width: 50px;
+	padding: 100px 0;
+	
+}
+
+.simple-button{
+	font-size: 20px;
+	text-align: center;
+	color: darkcyan;
+	border: 2px solid darkcyan;
+	background-color: rgba(0, 0, 0, .1);
+	border-radius: 0;
+}
+
+.simple-button:hover {
+	background-color:  rgba(0, 0, 0, .3);
+}
+
+/* --------------------------------------- About Page ---------------------------------*/
+
+.about{
+	display: flex;
+	justify-content: space-evenly;
+	padding: 0 3em;
+}
+
+.about-right img{
+	width: 70%;
+	height: 70%;
+	padding-left: 3em;
+	border-radius: 50%;
+}
+
+
+
+
