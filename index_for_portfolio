@@ -1,0 +1,44 @@
+
+    <html lang ="en">  
+
+        <head>
+            <meta charset="utf-8">
+            <title>StefelS.me</title>
+            <link rel="stylesheet" href="stylesheets/main.css">
+            <meta name="keywords" content="Stefel, Stefel Smith, portfolio, student"> <!-- for search engines to lookup webpage-->
+            <meta name="description" content="Stefel Smith personal webpage--">
+            <meta name="author" content="Stefel Smith">
+            <meta name="viewport" content="width=device-width,intitial-scale=1.0"> <!-- Scale to device user is on-->
+            
+        </head>
+
+        <body>
+            <!--Division: About me-->
+            <div class="homepage"></div>
+                <h1> About Me </h1>
+                <hr>
+                <img src="images/profile2.PNG" height="250" witdth="250" alt="A picture of me">
+                <h><b>Welcome</b></h>
+               
+                <p> 
+
+                    Hello!  I am a '24 at Dartmouth interested in engineering and computer science! I am from Brooklyn, NY.... (soon moving to Jersey but always a New Yorker). 
+                    During my time at Dartmouth so far, I've gain proficient skills in python and java as well as suitable knowledge and use of data structures. I'm excited to get into UI/UX design because it allows me to manifest what I've learned into a physical/digital experience to help and/or show to other people.
+                     Outside of comupter science
+                    one main area of interest is space! I was lucky enough to conduct research on black holes my freshman summer which as been a highlight of my college expereince thus far! Check out my pages for mor info!
+                
+
+                </p>
+
+            </div>
+        
+            </button>
+            <hr>
+            <footer> <small> Website made by Stefel Smith</small></footer>
+            <button style=" background-color: darkgrey;"> 
+                Leave Feedback
+            </button>
+        </body>
+    
+
+    </html

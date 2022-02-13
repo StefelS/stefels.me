@@ -9,6 +9,7 @@
             <meta name="description" content="Stefel Smith personal webpage" >
             <meta name="author" content="Stefel Smith">
             <meta name="viewport" content="width=device-width,intitial-scale=1.0">
+            <link rel="stylesheet" type="text/css"  href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css"/>
 
     </head>
     <body>
@@ -31,7 +32,7 @@
 
                 <div class="right-side">
                     <div class="brand">
-                        <div>Stefel Smith</div>
+                        <div> Stefel Smith</div>
                     </div>
                 </div>
             </div>
@@ -41,14 +42,13 @@
                 <!-- Holds all links to other pages-->
                 <div class="portfolio-items-wrapper">
 
-                    <div class="portfolio-item-wrapper">
+                    <div class="portfolio-item-wrapper resume-wrapper">
                         <!--Stores background image to style in css-->
-                        <div class="portfolio-img-background" style="background-image: url(images/resume.png);"></div>
+                        <!-- <div class="portfolio-img-background" style="background-image: url(images/resume.png);"></div> -->
 
                         <div class="img-text-wrapper">
-                            <div class="logo-wrapper">
-                                <img src="images/resume_logo.png">
-                            </div>
+                            
+                            <i class="file alternate outline inverted icon custom-icon"></i>
 
                             <div class="subtitle">
                                 Check Out My Resume!
@@ -56,30 +56,26 @@
                         </div>
                     </div>
 
-                    <div class="portfolio-item-wrapper">
+                    <div class="portfolio-item-wrapper project-wrapper">
                         <!--Stores background image to style in css-->
-                        <div class="portfolio-img-background" style="background-image: url(images/projects.png);"></div>
+                        <!-- <div class="portfolio-img-background" style="background-image: url(images/projects.png);"></div> -->
 
                         <div class="img-text-wrapper">
-                            <div class="logo-wrapper">
-                                <img src="images/project_logo.png">
-                            </div>
-
+                            <i class="folder open outline inverted icon custom-icon"></i>
+                            <!-- <img class="logo" src="images/project_logo.png"> -->
                             <div class="subtitle">
                                 Some Recent Projects!
                             </div>
                         </div>
                     </div>
 
-                    <div class="portfolio-item-wrapper">
+                    <div class="portfolio-item-wrapper  about-wrapper">
                         <!--Stores background image to style in css-->
-                        <div class="portfolio-img-background" style="background-image: url(images/profile2.PNG);"></div>
+                        <!-- <div class="portfolio-img-background" style="background-image: url(images/profile2.PNG);"></div> -->
 
                         <div class="img-text-wrapper">
-                            <div class="logo-wrapper">
-                                <img src="images/pfile3.png">
-                            </div>
-
+                            <i class="user outline icon inverted custom-icon"></i>
+            
                             <div class="subtitle">
                                 Find out a bit about me!
                             </div>
@@ -93,15 +89,15 @@
                 <div class="container main-footer-container">
                     <div class="socials">
                         <div class="socials-link">
-                            <a href="https://twitter.com/SmithStefel" target="_blank"><img src="images/twitter.png"></a>
+                            <a href="https://twitter.com/SmithStefel" target="_blank"><i class=" twitter icon custom-icon-social" ></i></a>
                         </div>
     
                         <div class="social-link">
-                            <a href="https://www.linkedin.com/in/stefel-smith-867a45202/" target="_blank"><img src="images/linkedin.png" ></a>
+                            <a href="https://www.linkedin.com/in/stefel-smith-867a45202/" target="_blank"><i class="linkedin icon custom-icon-social"> </i></a>
                         </div>
     
                         <div class="social-link">
-                            <a href="https://github.com/StefelS"><img src="images/github.png" target="_blank"></a>
+                            <a href="https://github.com/StefelS"><i class="github icon custom-icon-social"></i></a>
                         </div>
                     </div>
                     
@@ -109,7 +105,7 @@
                         <small> Website made by Stefel Smith</small>
                     </p>
                     <button  class="simple-button"> 
-                        <div style="text-decoration: darkcyan;"> Leave Feedback </div>
+                        <div style="text-decoration: rgb(126, 20, 55);"> Leave Feedback </div>
                     </button >
                 </div>
             </footer>
@@ -125,15 +121,17 @@
         portfolioItems.forEach(portfolioItem => {//js foreach loop, for each portfolio item 
             portfolioItem.addEventListener('mouseover', () => {//() => is an anonymous function 
                 //take html object from div and class and manipulate using js; 
-                console.log(portfolioItem.childNodes[3].classList);
-                portfolioItem.childNodes[3].classList.add('img-darken');
+                console.log(portfolioItem.childNodes)
+                portfolioItem.classList.add('background-dim')
+                portfolioItem.childNodes[5].classList.add('icon-highlight');
             })
 
             //when mouse stops hovering
             portfolioItem.addEventListener('mouseout', () => {//() => is an anonymous function 
                 //take html object from div and class and manipulate using js; 
-                //console.log(portfolioItem.childNodes[3].classList);
-                portfolioItem.childNodes[3].classList.remove('img-darken');
+                //console.log(portfolioItem.childNodes[5].classList);
+                portfolioItem.classList.remove('background-dim')
+                portfolioItem.childNodes[5].classList.remove('icon-highlight');
             })
         })
 

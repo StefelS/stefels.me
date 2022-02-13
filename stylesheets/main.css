@@ -2,11 +2,18 @@
 body{
 	font-family: "itillium+Web", sans-serif;
 	margin: 0px;
+	background: linear-gradient(to right, #909792, #f6f1d3);
 }
 
 .container{
 	display: grid;
 	grid-template-columns: 1fr; /*entire layout considered having columns*/
+}
+
+.main-footer {
+	position: fixed;
+	bottom: 0;
+	width: 100vw;
 }
 
 /*----------------------------------- Navigation Bar ------------------------- */
@@ -59,11 +66,19 @@ body{
 
 .portfolio-items-wrapper{
 	display : grid;
+	height: 40vh;
 	grid-template-columns: 1fr 1fr 1fr; /* give each collumn a full sized collumn*/
 }
 
+.custom-icon {
+	font-size: 4em !important;
+}
+
 .portfolio-item-wrapper{
-	position: relative; /* Allows more flexibility to position of each item*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* Allows more flexibility to position of each item*/
 }
 
 .portfolio-img-background{
@@ -74,9 +89,38 @@ body{
 	background-repeat: no-repeat;
 }
 
+.resume-wrapper {
+	background-image: url("../images/resume.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	object-fit: contain;
+}
+
+.project-wrapper{
+	background-image: url("../images/projects.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	object-fit: contain;
+}
+
+.about-wrapper{
+	background-image: url("../images/profile2.PNG");
+	background-size: cover;
+	background-position-y:-33vh;
+	background-repeat: no-repeat;
+	object-fit: contain;
+	
+}
+
+.background-dim{
+	transition: .5s;
+	filter: brightness(40%);
+}
+
 .img-text-wrapper{
-	position: absolute; /* force element where it wouldnt go, mut need relative position parent*/
-	top: 0;
+	/* position: absolute force element where it wouldnt go, mut need relative position parent*/
+	/* top: 50%;
+	left: 50%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -84,49 +128,59 @@ body{
 	height: 100%;
 	text-align: center;
 	padding-left: 100px;
-	padding-right: 100px;
+	padding-right: 100px; */
+	text-align: center;
 }
 
-.logo-wrapper img{
-	width: 70%;
-	margin-bottom: 20px;
+
+.logo{
+	width: 100px;
+	height: 100px;
 }
 
 .img-text-wrapper .subtitle {
-	transition: 1s;
+	transition: .8s;
 	font-family: 600;
+	font-style: italic;
 	color: transparent;
+	padding-top: 20px;
 }
 
 .img-text-wrapper:hover  .subtitle {
 	font-weight: 600;
-	color:darkcyan;
+	color: white;
 }
 
-/* js calls this when hovering over an image */
-.img-darken { 
-	transition: 1s;
-	filter: brightness(10%);
+/* js calls this when hovering over an icon */
+.icon-highlight { 
+	transition: .5s;
+	filter:drop-shadow(16px 16px 20px, white) invert(100%);
+	font-size:5vh;
+	cursor: pointer ;
 }
 
 /* ----------------------- Footer ------------------- */
 .socials{
 	display: flex;
 	justify-content: space-evenly;
+	height: 175px;
 }
 
-.socials img{
-	height: 50px;
-	width: 50px;
-	padding: 100px 0;
-	
+.socials a{
+	text-decoration:none;
 }
+
+.custom-icon-social{
+	font-size: 4em !important;
+	color: black;
+}
+
 
 .simple-button{
 	font-size: 20px;
 	text-align: center;
-	color: darkcyan;
-	border: 2px solid darkcyan;
+	color: rgb(45, 48, 48);
+	border: 2px solid rgb(140, 145, 145);
 	background-color: rgba(0, 0, 0, .1);
 	border-radius: 0;
 }
@@ -137,17 +191,30 @@ body{
 
 /* --------------------------------------- About Page ---------------------------------*/
 
-.about{
-	display: flex;
-	justify-content: space-evenly;
-	padding: 0 3em;
+.col-1-3{
+	width: 33.33%;
 }
 
-.about-right img{
-	width: 70%;
-	height: 70%;
-	padding-left: 3em;
-	border-radius: 50%;
+.col-2-3{
+	width: 66.66%;
+}
+
+.col-2-3 img{
+	
+}
+
+
+.col-1-3,
+.col-2-3 {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.grid, 
+.col-1-3,
+.col-2-3{
+padding-left: 15px;
+padding-right: 15px;
 }
 
 
