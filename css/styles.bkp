@@ -1,5 +1,6 @@
 *{
     margin:0;
+    padding: 0;
 }
 
 body{
@@ -7,7 +8,6 @@ body{
     height: 100vh;
     font-family: 'Montserrat', serif;
     overflow-y: auto;
-
 }
 
 
@@ -41,7 +41,7 @@ p{
     margin-bottom: 0;
 }
 
- /******* First Slide **********/
+ /********************************************** First Slide ************************************/
 .top-container{
     
     background-color: #E9D5DA;
@@ -112,7 +112,7 @@ p{
     margin: 0 0 0 0;
 }
 
- /******* Second Slide **********/
+ /***************************************** Second Slide *****************************************/
 .second-container{
     scroll-snap-align: start;
     background-color: #827397;
@@ -121,10 +121,6 @@ p{
     position: relative;
     color: #E9D5DA;
     
-}
-
-.profile{
-   
 }
 
 
@@ -177,141 +173,327 @@ p{
     margin: 0;
 }
 
-
-
-/**** Styles for Projects and Work Experience Page ****/
-
 .third-container{
     background-color: #4D4C7D;
     position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.third-container h2.title{
+    color: #af9cca;
+    position: absolute;
+    top: 3%;
+    left: 43%;
+    font-size: 200%;
+}
+
+/* ------------------------------------------------- Project section ----------------------------- */
+:root{
+    --primary: #fff;
+    --secondary: #af9ccad7 ;
+    ---dark: #4D4C7D;
+    --light: #a29bfe;
+}
+
+.projects-section{
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    position: relative;
+}
+
+.cards-wrapper > ul{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    left: 1%;
+}
+
+ul.select > li{
+    width: 30%;
+    height: 60%;
+    display: inline-block;
+    list-style: none;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px  rgba(0,0,0,.5);
+    padding: 10px;
+    margin-right: 20px;
+    margin-top: 90px;
+    text-align: center;
 
 }
-.work-section > h2{
-    margin-top: 30px;
-    text-align: center;
-    font-size: 300%;
-    margin-bottom: 0;
+
+.card-inner >img{
+    width: 50%;
+ 
+}
+
+
+/************************************************  Third Slide *********************************/
+
+.fourth-container{
+    background-color: #4D4C7D;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.fourth-container h2.title{
     color: #af9cca;
 }
-.jobs-wrapper{
+
+
+
+/* -------------------------------------------- Work Section ---------------------------------- */
+#work-title{
     position: absolute;
-    color: #fff;
-    text-align: center;
-    margin: 0 auto;
-    display: block;
+    margin-bottom: 5%;
+    padding-left: 45%;
+    margin-left: 0;
+    font-size: 150%;
+}
+
+.work-section{
+ 
+    position: absolute;
     width: 100%;
-    height: 30%;
+    bottom: 70%;
+    
 }
 
-/* Line properties*/
-.line-area{ 
-    display: block;
-    width: 70%;
-    height: 5px;
-    background: #262626;
+.work-section > input{
+    display: none;
     position: absolute;
-    top: 85%;
-  
-    left: 15%;
-
 }
 
-.jobs-wrapper .timeline-area{
-    height: 100%;
-}
-
-/* Dot Properties*/
-.single-item{ 
-    width: 6%;
-    display: inline-block;
+.head{
     position: relative;
-    height: 100%;
-    margin-right: 70px;
-    transition: width .5s;
+    width: 90%;
+    margin: auto;
+    height: 100px;
+    margin-top: 60px;
+    animation: trans .7s linear forwards;
+}
+ul.nav{
+    padding-top: 15px;
+    z-index: 100;
+    position: absolute;
+    width: 100%;
+    margin-top: -40px;
+}
+
+ul.nav li{
+    list-style: none;
+    float: left;
+    width: 50%; /* 100 / num jobs */
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 11px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all ease .2s;
+    vertical-align: middle;
+    height: 60px;
+    position: relative;
+    color: #af9cca;
+}
+
+ul.nav li:before{
+    content: "";
+    width: 25px;
+    height: 25px;
+    border: 2px solid #aaa;
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+    transition: all ease 0.3s;
+    position: absolute;
+    left: 44%;
+    
+}
+
+ul.nav li:hover::before{
+    border: 2px solid #fff;
+    background: #af9cca;
+
+}
+
+
+ul.nav li .inner{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    font-size: 14px;
+
+}
+
+
+ul.nav li.active,
+ul.nav li:hover{
+    color: #fff;
+}
+
+
+
+/* small dot under circle */
+
+ul.nav li::after{
+    content: "";
+    display: block;
+    width: 7px;
+    height: 7px;
+    background: #777;
+    border-radius: 50%;
+    border: 7px solid #fff;
+    margin-top: 40px;
+    box-shadow: 0 0 5px 0;
+    color: rgba(0,0,0,.1);
+    left: 45%;
+    position: absolute;
+    top: 45%;
+    color: #fff;
+}
+
+ul.nav li:hover::after,
+ul.nav li.active::after{
+    background: red;
+
+}
+
+
+
+.line{
+    width: 76%;
+    height: 7px;
+    margin: auto;
+    background: #eee;
+    position: absolute;
+    left: 12%;
+    top: 50%;
+    border-radius: 5px;
     z-index: 1;
 }
 
-
-
-.single-item > span{
-    height: 32px;
-    display: block;
-    font-weight: bold;
-    position: absolute;
-    margin-top: -15px; /* Move dots up and down */
-    cursor: pointer;
-}
-
-.single-item > span:before{
+.line span{
     content: "";
-    border-radius: 50%;
-    display: block;
-    width: 16px;
-    height: 16px;
-    background: #000;
-    margin: 0 auto 8px;
-}
-
-.img-area{
-    display: none;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    margin-top: -50%;
-    width: 100%;
-
-}
-
-.img-area a{
-    display: block;
-    width: 100%;
+    width: 90%;
     height: 100%;
-}
-
-/* image properties*/
-.img-area a img{
-    border-radius: 50%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    max-height: 100%;
-    max-width: 100%;
-    border: 5px solid #fff;
-}
-
-
-/* Caption Properties */
-.img-area a span{
+    background-image: linear-gradient(to right, #a29bfe 0%, #ff7675 100%);
     position: absolute;
-    width: 250%;
-    margin-left: -72%;
-    bottom: -40px;
-    left: 0;
-    text-transform: uppercase;
-    font-size: 20px;
-    text-decoration: none;
-    white-space: nowrap;
-    color: #fff;
-    font-weight: bold;
+    z-index: 2;
+    border-radius: 50px;
+    transition: all ease .8s;
 }
 
-.img-area a span:after{
-    margin-left: 5px;
-
+.content{
+    top: 90%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    animation: anim 7s linear forwards;
+    width: 70%;
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+    font-size: 150%;
+   
 }
 
-.single-item.active{
-    width:20%;
-    font-size: 0;
+
+.content img{
+    width: 20%;
+    border-radius: 40%;
+    
 }
 
-.single-item.active .img-area{
+section{
+    width: 100%;
+    margin: auto;
+    background: #fff;
+    border-radius: 4px;
+    padding: 30px;
+}
+
+section > span > h2{
+    color: #af9cca;
+}
+
+section > span > h3{
+    color: #827397;
+}
+
+section p{
+    padding-top: 20px;
+    font-size: 80%;
+}
+
+/* Fill in circle for current highlighted job */
+.research:checked ~ .head .nav li.st1::before,
+.collins:checked ~ .head .nav li.st2::before{
+    border: 2px solid #fff;
+    background: #a29bfe;
+    transition: all ease .3s;
+}
+
+.research:checked ~ .head .line span {
+    width: 22%;
+}
+
+.collins:checked ~ .head .line span {
+    width: 90%;
+}
+
+.research-section,
+.collins-section{
+    transform: scale(0);
+    transform-origin: center middle;
+    transition: all .7s ease;
+    position: absolute;
+}
+
+.research-section.active,
+.collins-section.active{
     display: block;
+    transform: scale(1);
+    transform: bottom;
 }
 
 
-/**** Styles for Social Media and Contact Page ****/
+/* entrance animation */
+@keyframes anim{
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    50%{
+        opacity: .5;
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* transitory animation */
+@keyframes trans{
+    0% {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    50%{
+        opacity: .5;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/*********************************** Styles for Social Media and Contact Page *************************/
 
 .bottom-container{
     position: relative;
@@ -324,22 +506,23 @@ p{
     position: absolute;
     text-align: center;
     background-color: #464070;
-    top: 20%;
-    bottom: 80%;
+    top: 10%;
+    bottom: 90%;
     left: 33%;
     right: 33%;
     width: 33%;
     box-shadow: 0 200px 50px 300px  #464070;
-    transform: translate(-50%.-50%);
-    
+
 }
 
 .input-field{
-    width: 50%;
+    width: 66%;
     margin-top: 20px;
     outline: none;
     border: 1px solid #777;
     border-radius: 5px;
+    padding: 2%;
+    font-size: 120%;
 }
 
 .text-area{

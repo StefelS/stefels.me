@@ -85,38 +85,52 @@
         <div id='projects&work' class="third-container container">
             <div class="projects-section">
                 <h2 class="title">My Projects</h2>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-face card-front"></div>
-                        <img src="images/bot.png" alt="">
-                        <h3>Project Name</h3>
-                        <hr>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur 
-                            adipisicing elit. Eveniet maiores possimus 
-                            cumque libero mollitia veniam, doloribus sequi 
-                            cupiditate labore minima non ipsam accusantium 
-                            error eaque qui a aut sed alias.
-                        </p>
-                        <div class="card-face card-back">
-                            <div class="card-content">
-                                <div class="card-header">
-                                    <div class="card-body">
-                                        <h3> Project 1</h3>
-                                        <p>
-                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                            Accusantium, laboriosam vitae nulla magnam eius illo dicta 
-                                            id nisi possimus tempore consequuntur beatae voluptate natus 
-                                            optio. Possimus, tempore. Sapiente, nisi ipsum!
-                                        </p>
-                                    </div>
-
-                                </div>
+                <div class="cards-wrapper">
+                    <ul class="select"> 
+                        <li class="card card1">
+                            <div class="card-inner">
+                                <img src="images/bot.png">
+                                <h2>Project 1</h2>
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                    Fugiat blanditiis quia libero similique hic officia ratione 
+                                    autem eligendi, neque itaque eius mollitia quasi esse ullam,
+                                    praesentium, corporis accusamus aspernatur maxime.
+                                </p>
+                              
                             </div>
-                        </div>
+                        </li>
+                        <li class="card card2">
+                            <div class="card-inner">
+                                <img src="images/bot.png">
+                                <h2>Project 2</h2>
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                    Fugiat blanditiis quia libero similique hic officia ratione 
+                                    autem eligendi, neque itaque eius mollitia quasi esse ullam,
+                                    praesentium, corporis accusamus aspernatur maxime.
+                                </p>
+                           
+                            </div>
+                        </li>
+                        <li class="card card3">
+                         
+                            <div class="card-inner">
+                                <img src="images/bot.png">
+                                <h2>Project 3</h2>
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                    Fugiat blanditiis quia libero similique hic officia ratione 
+                                    autem eligendi, neque itaque eius mollitia quasi esse ullam,
+                                    praesentium, corporis accusamus aspernatur maxime.
+                                </p>
+                              
+                            </div>
+                        </li>
+                    </ul>
+                </div>
 
-                    </div>
-                </div>  
+                    
             </div>
            
         </div>
