@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stefel Smith</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel='icon' href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Merriweather&family=Montserrat+Alternates&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-wrapper">
+
+    
+        <div class="top-container container">
+
+            <div class="nav-wrapper">
+                <div class="left-side">
+                    <div class="nav-link-wrapper active-nav-link"> 
+                        <a href="index.html"> Home </a>
+                    </div>
+                    <div class="nav-link-wrapper"> 
+                        <a href="#projects&work" > Projects </a>
+                    </div>
+                    <div class="nav-link-wrapper"> 
+                        <a href="cv.html"> Resume </a> <!--Add link to resume-->
+                    </div>
+                    <div class="nav-link-wrapper"> 
+                        <a href="#about"> About me  </a>
+                    </div>
+                </div>
+
+                
+            </div>
+
+            <img id='spacesuit' src='images/space-suit.png' alt="spacesuit">
+                <h1> Hi, I'm Stefel.</h1>
+                <h3> <em> Take a trip into my world</em></h3>
+            <img id="city" src='images/city-scape copy.png' alt="spacesuit">
+        </div>
+
+        <div class="second-container container">
+
+            <div id='about' class="profile">
+            
+                <img id='headshot' src="images/headshot1.jpeg" alt="My profile picture">
+                <p> 
+                    I am an junior at Dartmouth College from Brooklyn, NY (Relocted to Jersey). 
+                    I'll be graduating in 2024 with a degree in Computer Science modified with 
+                    Engineering Sciences. Outside of my major I've found an interest in astronomy, 
+                    particularly the development of black holes and was lucky enough to do <strong> <a href="https://ui.adsabs.harvard.edu/abs/2022HEAD...1910635H/abstract">
+                    research
+                    </a></strong> 
+                    with Dartmouth's physics department my freshman summer! I also enjoy playing sports
+                    and going to the gym and I am part of the layout team for <a href="https://issuu.com/blackpraxisdartmouth">Black Praxis</a>, an all black,
+                    student-led group on campus geared towards promoting black life at Dartmouth.
+                </p>
+            </div>
+    
+        
+            <h2> My Skills</h2>
+                <div class="skill-row1">
+    
+                    <img class="skill-icon" src='images/problem.png' alt="puzzle piece icon">
+
+                    <h3> Problem Solving</h3>
+                    <p> 
+                        Between my past 3 years as an engineering Student at dartmouth and my
+                        internship experience, I have gained valuable problem solving skills. 
+                    </p>
+                </div>
+                <div class="skill-row2">
+                    <img class="skill-icon" src='images/build.png' alt="software design icon">
+                    <h3> Software Design and Implementation</h3>
+                    <p> 
+                        Apply coding principles to build software and write code in Python, Java and C and Matlab.
+                    </p>
+            </div>
+        
+        </div>
+
+        <div id='projects&work' class="third-container container">
+            <div class="projects-section">
+                <h2 class="title">My Projects</h2>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-face card-front"></div>
+                        <img src="images/bot.png" alt="">
+                        <h3>Project Name</h3>
+                        <hr>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur 
+                            adipisicing elit. Eveniet maiores possimus 
+                            cumque libero mollitia veniam, doloribus sequi 
+                            cupiditate labore minima non ipsam accusantium 
+                            error eaque qui a aut sed alias.
+                        </p>
+                        <div class="card-face card-back">
+                            <div class="card-content">
+                                <div class="card-header">
+                                    <div class="card-body">
+                                        <h3> Project 1</h3>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            Accusantium, laboriosam vitae nulla magnam eius illo dicta 
+                                            id nisi possimus tempore consequuntur beatae voluptate natus 
+                                            optio. Possimus, tempore. Sapiente, nisi ipsum!
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>  
+            </div>
+           
+        </div>
+        <div class="fourth-container container">
+            <div class="work-section">
+
+                <h2 class="title" id="work-title">Work Experience </h2>
+                <input type="radio" class="research"   name="job" id="res-radio">
+                <input type="radio" class="collins" checked name="job" id="col-radio">
+                <div class="head">
+                    <ul class="nav">
+                        <li class="st st1" id="st1">
+                            <h2 class="inner"> Dartmouth College  </h2>
+                        </li>
+                        <li class="st st2" id="st2">
+                            <h2 class="inner"> Collins Aerospace </h2>
+                        </li>
+                    </ul>
+                    <div class="line">
+                        <span></span>
+                    </div>
+                    <div class="content">
+                        <section class="research-section active" id="research-info">
+                            <span>
+                                <img src="images/dartmouth.jpeg" alt="Dartmouth College Logo">
+                                <h2> Dartmouth College <br> <h3> Student Researcher </h3></h2>
+                            
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                    Labore voluptatibus totam adipisci. Fuga ad consectetur, 
+                                    soluta blanditiis voluptatibus fugit eos optio! Rerum quia 
+                                    ex vero harum, laudantium voluptate ab provident!
+                                </p>
+                            </span>
+                        </section>
+                        <section class="collins-section active" id="collins-info" >
+                            <span>
+                                <img src="images/collins.png" alt="Dartmouth College Logo">
+                                <h2> Collins Aerospace <br> <h3>AI/ML Intern </h3></h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                    Labore voluptatibus totam adipisci. Fuga ad consectetur, 
+                                    soluta blanditiis voluptatibus fugit eos optio! Rerum quia 
+                                    ex vero harum, laudantium voluptate ab provident!
+                                </p>
+                            </span>
+                        </section>
+                    </div>
+                </div>
+              
+
+                 
+            </div>
+        </div>
+        <div id='socials' class="bottom-container container">
+            <div class="contact-me">
+                <h1>Get in Touch!</h1>
+                <form class="contact-form" action="mailto:stefelsmith@gmail.com" method="post" enctype="text/plain">
+                    <input type="text" class="input-field" name="Name" placeholder="Your Name">
+                    <br>
+                    <input type="text" class="input-field" name="Email" placeholder="Your Email">
+                    <br>
+                    <input type="text" class="input-field" name="Subject" placeholder="Subject">
+                    <br>
+                    <textarea type="text" class="input-field text-area" name="Messsage" placeholder="Your Message"></textarea>
+                    <br>
+                    <input type="submit" class="btn-send" value="Send Message">
+                </form>
+                <a class="social-link" href="https://www.linkedin.com/in/stefel-smith/">
+                    <img src="images/linkedin.png">
+                </a>
+                <a class="social-link" href="https://twitter.com/home">
+                    <img src="images/twitter.png">
+                </a>
+                <a class="social-link" href="https://www.instagram.com/">
+                    <img src="images/instagram.png">
+                </a>
+                <p id="trademark"> 2023 Stefel Smith</p>
+            </div>
+        </div>
+    
+
+        <footer>
+            <a href="https://www.flaticon.com/free-icons/problem" title="problem icons">Problem icons created by Eucalyp - Flaticon</a>
+            <a href="https://www.flaticon.com/free-icons/code" title="code icons">Code icons created by juicy_fish - Flaticon</a>
+            <a href="https://www.flaticon.com/free-icons/searching-bar" title="searching bar icons">Searching bar icons created by QudaDesign - Flaticon</a>
+            <a href="https://www.flaticon.com/free-icons/network" title="network icons">Network icons created by vectorsmarket15 - Flaticon</a>
+            <a href="https://www.flaticon.com/free-icons/bot" title="bot icons">Bot icons created by Smashicons - Flaticon</a>
+            <a href="https://www.flaticon.com/free-icons/twitter" title="twitter icons">Twitter icons created by Pixel perfect - Flaticon</a>
+            <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by riajulislam - Flaticon</a>
+            <a href="https://www.flaticon.com/free-icons/instagram" title="instagram icons">Instagram icons created by Freepik - Flaticon</a>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+   
+   <script>
+        $(".st1").click(function(e) {
+             $(".research").prop("checked", true);
+             $("#st1").addClass("active");
+             $("#st2").removeClass("active");
+             $('#research-info').addClass('active')
+             $('#collins-info').removeClass('active')
+        });
+        $(".st2").click(function(e) {
+             $(".collins").prop("checked", true);
+             $("#st1").removeClass("active");
+             $("#st2").addClass("active");
+             $('#collins-info').addClass('active')
+             $('#research-info').removeClass('active')
+             
+        });
+     
+     </script>
+     <script>
+        const card=document.querySelector('.card-inner');   
+        card.addEventListener('click', function() {
+            card.classList.toggle("is-flipped");
+        });
+
+     </script>
+</body>
+
+</html>
+
+
+<!--
+    colors: #E9D5DA, #827397, #4D4C7D,#363062
+-->
